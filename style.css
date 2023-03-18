@@ -1,0 +1,399 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* for very small device */
+
+.row{
+    width: 100%;
+}
+.row::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+[class*="col-"]{
+    width: 100%;
+}
+
+
+
+/* font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+
+
+
+/* for small device ..........576px*/
+@media (min-width:576px){
+    .col-sm-1{
+        width: 8.33%;
+    }
+    .col-sm-2{
+        width: 16.66%;
+    }
+    .col-sm-3{
+        width: 25%;
+    }
+    .col-sm-4{
+        width: 33.33%;
+    }
+    .col-sm-5{
+        width: 41.66%;
+    }
+    .col-sm-6{
+        width: 50%;
+    }
+    .col-sm-7{
+        width: 58.33%;
+    }
+    .col-sm-8{
+        width: 66.66%;
+    }
+    .col-sm-9{
+        width: 75%;
+    }
+    .col-sm-10{
+        width: 83.33%;
+    }
+    .col-sm-11{
+        width: 91.66%
+    }
+    .col-sm-12{
+        width: 100%
+    }
+}
+
+
+
+/* for medium device  ........768px */
+@media (min-width:768px){
+    .col-md-1{
+        width: 8.33%;
+    }
+    .col-md-2{
+        width: 16.66%;
+    }
+    .col-md-3{
+        width: 25%;
+    }
+    .col-md-4{
+        width: 33.33%;
+    }
+    .col-md-5{
+        width: 41.66%;
+    }
+    .col-md-6{
+        width: 50%;
+    }
+    .col-md-7{
+        width: 58.33%;
+    }
+    .col-md-8{
+        width: 66.66%;
+    }
+    .col-md-9{
+        width: 75%;
+    }
+    .col-md-10{
+        width: 83.33%;
+    }
+    .col-md-11{
+        width: 91.66%
+    }
+    .col-md-12{
+        width: 100%
+    }
+}
+
+
+/* for large device................992px */
+@media (min-width:992px){
+    .logo-div{
+        text-align: left;
+    }
+    nav ul {
+        text-align: right;   
+    } 
+    
+     nav ul li{
+        display: inline-block;  
+    }
+    nav ul li a{
+        display: inline-block; 
+        transition: .4s;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        text-align: center;
+    }
+    nav ul li a:hover{
+        background-color: rgb(80, 147, 255);
+        transform: scale(1.08);
+        text-decoration: underline;
+    }
+/* bannar section */
+#bannar-section{
+    position: relative;
+    height: 100vh;
+}
+.bannar-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+    .col-lg-1{
+        width: 8.33%;
+    }
+    .col-lg-2{
+        width: 16.66%;
+    }
+    .col-lg-3{
+        width: 25%;
+    }
+    .col-lg-4{
+        width: 33.33%;
+    }
+    .col-lg-5{
+        width: 41.66%;
+    }
+    .col-lg-6{
+        width: 50%;
+    }
+    .col-lg-7{
+        width: 58.33%;
+    }
+    .col-lg-8{
+        width: 66.66%;
+    }
+    .col-lg-9{
+        width: 75%;
+    }
+    .col-lg-10{
+        width: 83.33%;
+    }
+    .col-lg-11{
+        width: 91.66%
+    }
+    .col-lg-12{
+        width: 100%
+    }
+}
+
+/* header starts here */
+header{
+    background-color: orange;
+    padding: 0% 1%;
+    text-align: center;
+}
+
+ .logo{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color:rgb(100, 97, 97);
+    border: 2px solid rgb(109, 106, 106);
+    border-radius: 30%;  
+}
+nav ul li{
+    display: block;
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 70px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.2s;
+}
+nav ul li a:hover{
+    background-color:rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 30px 0px white;
+    border-radius: 15px;
+}
+/* header ends here */
+
+
+
+/* bannar starts */
+#bannar-section{
+   background-image: url("cover3.jpg"); 
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.bannar-container{
+    padding: 50px 10px;
+    text-align: center;
+
+}
+.bannar-container h1{
+    width: 100%;
+    margin: 15px auto;
+    font-size: 3rem;
+    background: rgba(225,225,0,0.884);
+    border-radius: 15px;
+    padding: 10px;
+    font-family: 'Handlee', cursive;
+}
+.bannar-container p{
+    width: 300px;
+    margin: 15px auto;
+    background: coral;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+.btn{
+    width: 150px;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: orangered;
+    transition: 0.2s;
+    text-transform: uppercase;
+}
+.btn:hover{
+    transform: scale(1.2);
+    color:aqua;
+} 
+/* bannar ends */
+
+
+
+/* about us starts here */
+.about-us{
+    padding: 1%;
+}
+.about-us-content{
+    text-align: center;
+
+}
+.about-us-content h3{
+ font-size: 2rem;
+ margin-bottom: 10px;
+}
+.about-us-content p{
+    font-size: 1rem;
+    margin-bottom: 10px;
+   }
+   
+/* about us ends here */
+
+
+/* food menu starts here */
+#food-menu{
+    padding: 1%;
+}
+.card-body{
+    text-align: center;
+}
+.card-body img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.item-desc{
+    background: orange;
+
+}
+.item-name{
+    background-color: yellowgreen;
+    padding: 10px;
+}
+.item-desc > p{
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+}
+.card{
+    transition: 0.4s;
+    
+}
+.card:hover{
+    transform: scale(1.1);
+}
+/* food menu ends here */
+
+
+
+
+/* contacts starts */
+#contact-us{
+    padding: 1%;
+    background: yellowgreen;
+}
+.contact-details{
+    color: darkblue;
+    text-align: center;
+    padding: 20px 0;
+}
+.map{
+    width: 100%;
+    height: 250px;
+}
+.contact-details p, address{
+    font-size: 1rem;
+}
+/* contacts ends */
+
+
+/* footer starts */
+
+
+footer{
+    padding: 1%;
+    color: white;
+    background: #160B29;
+}
+footer p{
+    line-height: 32px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.social-manu{
+    text-align: center;
+
+}
+.icon-style{
+    color: white;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(66, 0, 179);
+    border-radius: 30%;
+    margin: 0 10px;
+    transition: .4s;
+    text-align: center;
+    transition: 0.2s;
+}
+.icon-style:hover{
+    transform: scale(1.4);
+    background-color: coral;
+}
+/* footer ends */
